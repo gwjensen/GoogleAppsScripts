@@ -1,0 +1,15 @@
+Create the form in google drive.
+
+Link the form to a spreadsheet in google drive.
+
+Use the contents of DynamicFormUpdate.gs to automatically update the form with submitted information.
+
+Make sure to set the script as a trigger that gets called on submit.
+
+If you want to see the data of the spreadsheet in real-time, use the google pie chart ( or other chart ) from the app store. The built in
+one doesn't work quite right, and if you just publish a chart that is embedded in the google sheet it only updates every 5 minutes and not 
+on reload of the page. The specific app I used was "Google Gadget Pie Chart" found in the more gadgets link of the insert directory.
+
+I think that's it....
+
+Grady
