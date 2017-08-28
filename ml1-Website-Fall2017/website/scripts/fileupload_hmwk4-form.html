@@ -1,0 +1,346 @@
+<!-- 
+   S U P P O R T
+   - - - - - - -
+   
+   You're on your own :)
+     
+   -->
+<div >
+   <p style="font-size:20px" class="red-star">Submission deadline: <span id="due_date"></span> (i.e. One minute before noon (CET))</p>
+</div>
+<div>
+<form id="myForm" >
+   <table border=2>
+      <th align="left" style="font-size:18px"><b style="color:rgb(0,0,0);font-family:Segoe UI,helvetica,arial,sans-serif"><span style="color:rgb(111,168,220)">Linear Regression and Kernels</span></b> </th>
+      <tr>
+         <td>
+            <table>
+               <tr>
+                  <th align="right">
+                     &nbsp;
+                     <p class="field_note">IMAT must be 8 chars.</p>
+                     <span class="red-star">★required</span>
+                  </th>
+                  <td>
+                     <table>
+                        <tr>
+                           <td>
+                              <input type="text" name="matrikulation" placeholder="Matrikulation #:" 
+                                 onkeypress='return event.charCode >= 48 && event.charCode <= 57' size="20" 
+                                 masked="true" maxlength="8" minlength="8" required="true" >
+                           </td>
+                           <td>
+                              <input class="form-checkbox" id="university" type="checkbox" name="university" value="LMU" title=""  />
+                              <input id="university_hidden" type="hidden" value="TUM" name="university" /> 
+                           </td>
+                           <td>
+                              <p class="field_note">If you are a student of the LMU, check this box.</p>
+                           </td>
+                     </table>
+                  </td>
+               </tr>
+               <tr>
+                  <th class="bottom-pad" align="right">&nbsp;<span class="red-star">★required</span></th>
+                  <td class="bottom-pad"><input type="text" name="email" placeholder="email address" required="true" >
+                  </td>
+               </tr>
+               <!-- Question 1 -->
+               <tr>
+                  <th valign="top" align="left" width="35%" class="bottom-pad">
+                     <label for="question1">Q1:Let's assume you are using a maximum likelihood version of the regression algorithm with a polynomial basis function. What can happen when the order of your polynomial is considerably higher than the number of training points? (Yes, do it in 50 chars or less!)<span class="red-star">★required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                  </th>
+                  <td width="65%" align="center" class="bottom-pad">
+                     <textarea onkeyup="textCounter(this, 'counter1', 50);" maxlength="50" rows="6" cols="60" 
+                        name="question1" required="true">I don't know anything about this.</textarea>
+                     <table>
+                        <tr>
+                           <td>Characters remaining:</td>
+                           <td><input disabled  maxlength="3" size="3"  value=17 id="counter1"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <!-- Question 2 -->
+               <tr>
+                  <th valign="top" align="left" width="35%" class="bottom-pad">
+                     <label for="question2">Q2: Why is the bayesian formulation useful? <span class="red-star">★required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                  </th>
+                  <td width="65%" align="center" class="bottom-pad">
+                     <textarea onkeyup="textCounter(this, 'counter2', 200);" maxlength="200" rows="6" cols="60" 
+                        name="question2" required="true">I don't know anything about this.</textarea>
+                     <table>
+                        <tr>
+                           <td>Characters remaining:</td>
+                           <td><input disabled  maxlength="3" size="3"  value=167 id="counter2"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <!-- Question 3 -->
+               <tr>
+                  <th valign="top" align="left" width="35%" class="bottom-pad">
+                     <label for="question3">Q3:Which two assumptions do we make regarding the weight parameters and the data points when we use least squares regression with <img src="http://latex.codecogs.com/gif.latex?L_2" border="0"/> regularization?<span class="red-star">★required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                  </th>
+                  <td width="65%" align="center" class="bottom-pad">
+                     <textarea onkeyup="textCounter(this, 'counter3', 200);" maxlength="200" rows="6" cols="60" 
+                        name="question3" required="true">I don't know anything about this.</textarea>
+                     <table>
+                        <tr>
+                           <td>Characters remaining:</td>
+                           <td><input disabled  maxlength="3" size="3"  value=167 id="counter3"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <!-- Question 4 -->
+               <tr>
+                  <th valign="top" align="left" width="35%" class="bottom-pad">
+                     <label for="question4">Q4: Why are kernels useful? I.e. how do they help us combat the curse of dimensionality? <span class="red-star">★required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                  </th>
+                  <td width="65%" align="center" class="bottom-pad">
+                     <textarea onkeyup="textCounter(this, 'counter4', 200);" maxlength="200" rows="6" cols="60" 
+                        name="question4" required="true">I don't know anything about this.</textarea>
+                     <table>
+                        <tr>
+                           <td>Characters remaining:</td>
+                           <td><input disabled  maxlength="3" size="3"  value=167 id="counter4"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+               <!-- Question 5 -->
+               <tr>
+                  <th valign="top" align="left" width="35%" class="bottom-pad">
+                     <label for="question5">Q5: What is difficult about proving a function is a kernel assuming that you can't use the kernel construction rules in the slide "Making Kernels with Kernels"? <span class="red-star">★required</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+                  </th>
+                  <td width="65%" align="center" class="bottom-pad">
+                     <textarea onkeyup="textCounter(this, 'counter5', 200);" maxlength="200" rows="6" cols="60" 
+                        name="question5" required="true">I don't know anything about this.</textarea>
+                     <table>
+                        <tr>
+                           <td>Characters remaining:</td>
+                           <td><input disabled  maxlength="3" size="3"  value=167 id="counter5"></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>                
+            </table>
+         </td>
+      </tr>
+   </table>
+   <p> 
+   <table border=2>
+      <th align="left" style="font-size:18px"><b style="color:rgb(0,0,0);font-family:Segoe UI,helvetica,arial,sans-serif"><span style="color:rgb(111,168,220)">Last Week's Lecture</span></b> </th>
+      <tr>
+         <td>
+            <table>
+               <tr>
+                  <th width="35%" align="center" >Upload your MVN hmwk file<span class="red-star"><!--★required--></span></th>
+                  <td width="65%"><input type="file" name="myFile" accept=".pdf, .zip" file-maxsize="10240" file-minsize="0" 
+                                 file-limit="0">
+                  </td>
+                  <td>
+                      <table>
+                         <tr>
+                             <td>
+                                 <input class="form-checkbox" id="no_hmwk" type="checkbox" name="no_hmwk" value="NONE" title=""  />
+                             </td>
+                             <td>
+                                 <p class="field_note">If you didn't do the homework this week, but you still want to submit the prep questions, check this box.</p>
+                             </td>
+                         </tr>
+                     </table>
+                  </td>   
+               </tr>
+               <tr>
+                  <th width="35%">How would you rate the Multi-variate Normals Video Lectures?</th>
+                  <td width="65%" align="center">
+                     <table summary="" cellpadding="4" cellspacing="0" class="form-scale-table">
+                        <tr>
+                           <th>
+                              &nbsp;
+                           </th>
+                           <th align="center">
+                              <label for="rateLecture_1"> 1 </label>
+                           </th>
+                           <th align="center">
+                              <label for="rateLecture_2"> 2 </label>
+                           </th>
+                           <th align="center">
+                              <label for="rateLecture_3"> 3 </label>
+                           </th>
+                           <th align="center">
+                              <label for="rateLecture_4"> 4 </label>
+                           </th>
+                           <th align="center">
+                              <label for="rateLecture_5"> 5 </label>
+                           </th>
+                           <th>
+                              &nbsp;
+                           </th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <label for="rateLecture_1"> Worst </label>
+                           </td>
+                           <td align="center">
+                              <input class="form-radio" type="radio" style="display:none;" name="rateLecture" value="0" id="rateLecture_0" checked="checked" />
+                              <input class="form-radio" type="radio" name="rateLecture" value="1" title="1" id="rateLecture_1" />
+                           </td>
+                           <td align="center">
+                              <input class="form-radio" type="radio" name="rateLecture" value="2" title="2" id="rateLecture_2" />
+                           </td>
+                           <td align="center">
+                              <input class="form-radio" type="radio" name="rateLecture" value="3" title="3" id="rateLecture_3" />
+                           </td>
+                           <td align="center">
+                              <input class="form-radio" type="radio" name="rateLecture" value="4" title="4" id="rateLecture_4" />
+                           </td>
+                           <td align="center">
+                              <input class="form-radio" type="radio" name="rateLecture" value="5" title="5" id="rateLecture_5" />
+                           </td>
+                           <td>
+                              <label for="rateLecture_5"> Best </label>
+                           </td>
+                        </tr>
+                        <tr>
+                            <font color='red'>Note: This evaluation is for MVN, not linear regression/kernels! Wait until next week to review the LR/kernels lecture. </font>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+   <p id="error"></p>
+   <input type="submit" id="mySubmit" name="mySubmit" value="Submit Form" onclick="checkRequired(this.parentNode);return false;">
+   <input type="hidden" name="time" id="time" value="" />
+</form>
+</div>
+<div id="output"></div>
+<script>
+   function fileUploaded(status) {
+       //document.getElementById('myForm').style.display = 'none';
+       document.getElementById('output').innerHTML = status;
+       document.getElementById('mySubmit').value = "Submit Form";
+       document.getElementById('error').innerHTML = "";
+   }
+   
+   function textCounter(field, countfield, maxlimit)
+   {
+       var countfield = document.getElementById(countfield);
+       if ( field.value.length > maxlimit ) {
+           field.value = field.value.substring( 0, maxlimit );
+           countfield.value = maxlimit - field.value.length
+           return false;
+       } 
+       else {
+           countfield.value = maxlimit - field.value.length;
+       }
+   }
+   
+   function textCounterNice(field, countfield, maxlimit)
+   {
+       var countfield = document.getElementById(countfield);
+       if ( field.value.length > maxlimit ) {
+           field.value = field.value.substring( 0, maxlimit );
+           return false;
+       } 
+       else {
+           countfield.value = maxlimit - field.value.length;
+       }
+       
+   }
+   
+   function hasExtension(name, exts) {
+       var fileName = name.value;        
+       return (new RegExp('(' + exts.join('|').replace(/\./g, '\\.') + ')$')).test(fileName);
+   }
+   
+   function checkRequired(form){       
+       
+       var timenow = getTimeNow();
+       //We need to check if they actually submitted a file or not with this submission, this means we also have to check in the scripts or we will
+       //be doing weird things with null objects.....GWJ
+       if (form.checkValidity() == true && (hasExtension(form.myFile, ['.pdf', '.zip']) == true || form.no_hmwk.checked)){
+          if(document.getElementById("university").checked) {
+             document.getElementById('university_hidden').disabled = true;
+          }
+          if (hasExtension(form.myFile, ['.pdf', '.zip']) == true || form.no_hmwk.checked) {
+              //I use the extension check again as an easy way of verifying that form.myFile is populated and not just an empty object.
+              if (hasExtension(form.myFile, ['.pdf', '.zip']) == true && form.no_hmwk.checked){
+                  document.getElementById('error').innerHTML = "<h1><font color='red'>You either want to submit a homework file or don't want to, make up your mind...</font></h1>";
+              }
+              else{
+                  form.mySubmit.value = "Uploading...";
+                  form.mySubmit.disabled = true;
+                  form.time.value = getDueDate().getTime();
+                  google.script.run.withSuccessHandler(fileUploaded).submitFormInformation(form);
+              }
+          }
+          else{
+              document.getElementById('error').innerHTML = "<h1><font color='red'>You must upload a file in the .pdf or .zip format.</font></h1>";
+          }
+  
+       }
+       else{
+          document.getElementById('error').innerHTML = "<h1><font color='red'>You are missing a required input.</font></h1>";
+       }
+      
+   }
+    
+   function toDateTime(secs) {
+       var t = new Date(1970, 0, 1); // Epoch
+       t.setSeconds(secs);
+       return t;
+   }
+   function getTimeNow() {
+       var d = new Date();
+       return d;
+   }
+   
+   //setInterval(updateClock, 1000); // initial call
+
+   function getDueDate() {
+    //This has to stay in UTC time so students don't game the system.
+      year = 2016
+      month = 10; //starts at 0 for Jan
+      day = 28;
+      hour = 10; //Subtract 1 for UTC time - ..If before daylight savings is over subtract 2.
+      min = 59;
+      sec = 0;
+      var d = new Date(Date.UTC(year, month, day, hour, min,sec));
+      return d;      
+   }
+   
+
+   function updateDate() {
+       var d = getDueDate();
+       var d = (d.toString()).split(' ');
+       // ["Tue", "Sep", "03", "2013", "21:54:52", "GMT-0500", "(Central", "Daylight", "Time)"]
+
+      var datestring = [d[1], d[2], d[4], d[5]].join(' ');
+      // "2013 Sep 03 21:58:03"
+      document.getElementById('due_date').textContent =  datestring;
+
+   }
+   window.onload = function(){
+                     updateDate();//one time call
+                }
+</script>
+
+<style>
+   .red-star {
+   color: red;
+   font-size:60%;
+   }
+   .field_note {
+   font-size:60%;
+   }
+   .bottom-pad {
+   padding-bottom: 1cm;
+   }
+
+   <!-- input { display:block; margin: 20px; } -->
+</style>
